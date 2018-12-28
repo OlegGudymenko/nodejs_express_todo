@@ -96,8 +96,7 @@ class TodosController {
       const result = await todosModel.updateTodo(id, req.body, {
         new: true
       });
-  
-      console.log(result,'result ')
+      
       if(result){
         res.status(200).send({
           success: true,
